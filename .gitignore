@@ -1,0 +1,6 @@
+# packges
+node_modules
+
+#variveis
+.env
+.env.local
