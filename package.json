@@ -1,0 +1,31 @@
+{
+  "name": "video_download_api",
+  "version": "1.0.0",
+  "description": "This project is a node API for downloading cross-platform videos. Can be used to download videos from all the most used social networks like YouTube, Instagram, Facebook and twitter made from node technology",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf /dist && tsc && cp .env dist/.env && cp package.json dist/package.json && cd dist/ && npm i --production",
+    "start": "node dist/main.js",
+    "dev": "ts-node-dev --quiet --respawn --transpile-only --rs --clear src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabDevjs/video_download_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabDevjs/video_download_api/issues"
+  },
+  "homepage": "https://github.com/GabDevjs/video_download_api#readme",
+  "devDependencies": {
+    "nodemo": "^1.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
